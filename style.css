@@ -1,0 +1,90 @@
+body {
+  margin: 50px 50px 0px 50px;
+  background-color: #faf9f6;
+}
+
+.animation {
+  color:#191970;
+  animation-name: hue;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes hue {
+  from {color:#191970;}
+  to {color: #fcb464;}
+}
+
+.flex-container {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  min-height: 50vh;
+}
+
+.content{
+  margin: 50px 50px 0px 0;
+  width: 45%;
+  row-gap: 50px;
+}
+
+#header{
+  font-size: 2.5rem;
+  font-family: Poppins, sans-serif;
+}
+
+.photo{
+  height: 200px;
+  width: 300px;
+  margin-right: 50px;
+  float:left;
+}
+
+h2 {
+  display: block;
+}
+
+footer {
+  font-family: Poppins, sans-serif;
+  color:#191970;
+ /*  display: flex;
+  flex-direction: column; */
+  text-align: right;
+}
+
+@media (max-width: 700px) { .flex-container {
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+}
+
+.logo {
+  height: 20px;
+  width: 100px;
+}
+
+h1{
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.flex-container {
+  flex-direction: column;
+}
+
+.content{
+  margin: 16px 0;
+  width: 100%;
+}
+
+.photo{
+  width: 100%;
+  object-fit: cover;
+}
+}
+
+
